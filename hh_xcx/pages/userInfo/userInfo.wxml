@@ -1,0 +1,42 @@
+<!--pages/userInfo/userInfo.wxml-->
+<view class="userInfoBox">
+  <view class="headInfo {{isClick?'changeActive':''}}" bindtap="changeHeadPic">
+    <view class="headPic">
+      <image wx:if="{{imgUrl!= null}}" src="{{imgUrl}}" class="userinfo-avatar" background-size="cover"></image>
+      <image wx:else src="../../images/LOGO2@2x.png" class="userinfo-avatar"></image>
+    </view>
+    <text>修改头像></text>
+  </view>
+
+  <view class="phoneNum">
+    <text>手机号码</text>
+    <view class="classname">158****0536</view>
+  </view>
+
+  <view class="userName">
+    <text>昵称</text>
+    <view class="username">ChirsKarl</view>
+    <image src="http://h5smg.miyapay.com/h5/hhxcx_img/arrow.png" mode="widthFix"></image>
+  </view>
+  <view class="gender">
+    <text>性别</text>
+
+    <picker mode="selector" range="{{array}}" value="{{index}}" bindchange="bindPickerChange">
+
+      <view class="">{{array[index]}}</view>
+    </picker>
+    <image src="http://h5smg.miyapay.com/h5/hhxcx_img/arrow.png" mode="widthFix"></image>
+  </view>
+  <view class="birthday">
+    <text>生日</text>
+    <!-- <view class="">1994年1月5日</view> -->
+    <picker mode="date" start="1900-1-1" end="2018-1-1" value="{{date}}" fields="day" bindchange="bindDateChange">
+      <view>{{date}}</view>
+    </picker>
+    <image src="http://h5smg.miyapay.com/h5/hhxcx_img/arrow.png" mode="widthFix"></image>
+  </view>
+  <view class="huayu">
+    <text>花语</text>
+    <image src="http://h5smg.miyapay.com/h5/hhxcx_img/arrow.png" mode="widthFix"></image>
+  </view>
+</view>

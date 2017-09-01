@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/store/store",
+    "pages/map/map",
+    "pages/storeDetails/storeDetails",
+    "pages/city/city",
+    "pages/login/login",
+    "pages/couponDetails/couponDetails",
+    "pages/useSuccess/useSuccess",
+    "pages/exchange/exchange",
+    "pages/nearby/nearby",
+    "pages/mine/mine",
+    "pages/toUseCoupons/toUseCoupons",
+    "pages/collectionCard/collectionCard"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "会花",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#FF694B",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/ic_home_off@2x.png",
+        "selectedIconPath": "images/ic_home_on@2x.png"
+      },
+      {
+        "pagePath": "pages/store/store",
+        "text": "附近优惠",
+        "iconPath": "images/ic_preferential_off@2x.png",
+        "selectedIconPath": "images/ic_preferential_on@2x.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/ic_my_off@2x.png",
+        "selectedIconPath": "images/ic_my_on@2x.png"
+      }
+    ]
+  }
+}

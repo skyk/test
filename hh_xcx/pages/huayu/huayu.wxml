@@ -1,0 +1,7 @@
+<!--pages/huayu/huayu.wxml-->
+<textarea class="huayu" bindinput="inText" />
+<view class="text-count">
+ <text class="{{isExceed?'':'exceed'}}">{{textCounts}}</text>
+ <text>/100</text>
+</view>
+<view class="finish-btn">完成</view>

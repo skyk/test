@@ -1,0 +1,57 @@
+<!--pages/preHistory/preHistory.wxml-->
+<view class="coupons">
+  <view bindtap="bindToCouponDetails" class="item">
+    <image class="bak" src="http://h5smg.miyapay.com/h5/hhxcx_img/img_ticket_box@2x.png" mode="widthFix"></image>
+    <view class="container">
+      <view class="top">
+        <view class="icon">
+          <image src="http://h5smg.miyapay.com/h5/hhxcx_img/prod.png" mode="widthFix"></image>
+        </view>
+        <view class="details">
+          <view class="prod-name">可可梦巧克力液态奶200ml装/箱</view>
+          <view class="prod-coupon">
+            <view>
+              <text>20</text><text>元优惠券</text>
+            </view>
+            <view>满300元可用</view>
+          </view>
+        </view>
+        <view class="btn" catchtap="getCoupon">
+          已使用
+        </view>
+      </view>
+      <view class="bottom">
+        <view>多买多送</view>
+        <view>有效期：2017.04.01-2017.04.30</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="coupons">
+  <view bindtap="bindToCouponDetails" class="item">
+    <image class="bak" src="http://h5smg.miyapay.com/h5/hhxcx_img/img_ticket_box@2x.png" mode="widthFix"></image>
+    <view class="container">
+      <view class="top">
+        <view class="icon">
+          <image src="http://h5smg.miyapay.com/h5/hhxcx_img/prod.png" mode="widthFix"></image>
+        </view>
+        <view class="details">
+          <view class="prod-name">可可梦巧克力液态奶200ml装/箱</view>
+          <view class="prod-coupon">
+            <view>
+              <text>20</text><text>元优惠券</text>
+            </view>
+            <view>满300元可用</view>
+          </view>
+        </view>
+        <view class="btn" catchtap="getCoupon">
+          已过期
+        </view>
+      </view>
+      <view class="bottom">
+        <view>多买多送</view>
+        <view>有效期：2017.04.01-2017.04.30</view>
+      </view>
+    </view>
+  </view>
+</view>

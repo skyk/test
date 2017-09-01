@@ -1,0 +1,266 @@
+/**index.wxss**/
+page{background-color:#f5f5f9;}
+.storeDetails-page {box-sizing: border-box;}
+.storeDetails-page view{box-sizing: border-box;}
+.storeDetails-page text{box-sizing: border-box;}
+text{
+    font-family: "Microsoft YaHei";
+}
+
+
+.store_list{
+  padding:0px 30rpx 0rpx 25rpx;
+  background-color:#ffffff;
+  margin-bottom:20rpx;
+  overflow:hidden;
+}
+.store_area{
+  background-color:#ffffff;
+  min-height:180rpx;
+  padding:24rpx 0rpx;
+  overflow:hidden;
+}
+.store_area .pic{
+  height:132rpx;
+  width:132rpx;
+  margin-right:20rpx;
+  float: left
+}
+.store_area .pic image{
+  width:100%;
+  height:100%;
+}
+.store_area .info_area{
+  float:left;
+  min-height:132rpx;
+  width:78%
+}
+.store_area .info_area .word{
+  padding-top:17rpx;
+  min-height:71rpx;
+  border-bottom:1px dotted #e6e6e6;
+  overflow: hidden;
+  width:100%;
+  padding-bottom:5rpx;
+}
+
+.store_area .info_area .word navigator{
+  float: right
+}
+
+.store_area .info_area .word .name{
+  font-size:32rpx;
+  color:#000000;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  width:75%;
+  float: left
+}
+
+.store_area  .info_area .word .address{
+  margin-left:10rpx;
+  min-width:105rpx;
+  padding-top:6rpx;
+  font-size:24rpx;
+  color:#666666;
+}
+.store_area .info_area .word .address image{
+  width:23rpx;
+  height:31rpx;
+  margin-right:10rpx;
+}
+
+.store_area .info_area  .loc{
+  padding-top:17rpx;
+  font-size:26rpx;
+  color:#666666;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+
+
+/*--门店信息---*/
+.store_info{
+  padding-left:30rpx;
+  background-color:#ffffff;
+  margin-bottom:20rpx;
+}
+
+.store_info .title{
+  font-size:30rpx;
+  height:90rpx;
+  line-height:89rpx;
+  color:#000000;
+  border-bottom:1px solid #e5e5e5;
+}
+
+.store_info .inf{
+  height:89rpx;
+  line-height:89rpx;
+  border-bottom:1px solid #f5f5f5;
+  color:#666666;
+  font-size:28rpx;
+}
+.store_info .inf view{
+  display: inline-block;
+  font-family: "Microsoft YaHei";
+}
+
+.store_info .inf:last-child{
+  border:none;
+}
+
+
+
+
+/****领券区*****/
+.coupons_area{padding:0px 20rpx 50rpx;}
+ .coupons_list{
+  height:200rpx;
+  background-color:#ffffff;
+  border-radius:20rpx;
+  margin-bottom:20rpx;
+  display:-moz-box;
+  display:-webkit-box;
+  display:box;
+  overflow:hidden;
+}
+ .coupons_list .money{
+  width:185rpx;
+  color:#ea4942;
+  line-height:200rpx;
+  text-align:center;
+}
+ .coupons_list .money .mark{
+  font-size:42rpx;
+}
+ .coupons_list .money .number{
+ font-size:110rpx;
+}
+.coupons_list .money .number.small{
+ font-size:55rpx;
+}
+
+ .coupons_list .info{
+  padding-top:35rpx;
+  height:200rpx;
+  width:370rpx;
+   -moz-box-flex:1;
+   -webkit-box-flex:1;
+   box-flex:1;
+   padding-right:2rpx;
+}
+
+ .coupons_list .info .title .name{
+  font-size:28rpx;
+  color:#000000;
+  margin-right:11rpx;
+}
+ .coupons_list .info .title .nb{
+  font-weight:bold;  
+  display:inline-block;
+  height:33rpx;
+  line-height:29rpx;
+  padding:0px 10rpx;
+  font-size:26rpx;
+  border:2rpx solid #ea4942;
+  border-radius:10rpx;
+  color:#ea4942;
+}
+
+.coupons_list .info .word{
+  margin-top:20rpx;
+  font-size:24rpx;
+  color:#666666;
+  min-height:60rpx;
+  width:100%
+}
+
+ .coupons_list .info .date{
+  font-size:20rpx;
+  color:#666666;
+}
+
+
+ .coupons_list .coupon_mark{
+  float:right;
+  text-align:center;
+  position:relative;
+  left:0px;
+  top:0px;
+  width:157rpx;
+  height:200rpx;
+  background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 6rpx, #ea4942 6rpx);
+  background-size: 14rpx 14rpx;
+  background-position: -6rpx 0rpx;
+  background-repeat:repeat-y;
+}
+
+ .coupons_list .coupon_mark .before{
+    background-color:#ea4942;
+    position: absolute;
+    top: 0px;
+    
+    left:6rpx;
+    width:100%;
+     height:100%;
+    z-index:1;
+}
+ .coupons_list .coupon_mark .circle-1{
+  position:absolute;
+  width:25rpx;
+  height:25rpx;
+  left:-12rpx;
+  top:-12rpx;
+  background-color:#f5f5f9;
+  z-index:2;
+  border-radius:50%;
+}
+ .coupons_list .coupon_mark .circle-2{
+  position:absolute;
+  width:25rpx;
+  height:25rpx;
+  left:-12rpx;
+  bottom:-12rpx;
+  background-color:#f5f5f9;
+  z-index:2;
+  border-radius:50%;  
+}
+ .coupons_list .coupon_mark .buy{
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-52rpx;
+  margin-top:-52rpx;
+  width:105rpx;
+  height:105rpx;
+  line-height:105rpx;
+  font-size:32rpx;
+  color:#ea4942;
+  background-color:#ffffff;
+  border-radius:50%;
+  z-index:2;
+}
+ .coupons_list .coupon_mark .bg{
+  display:none;
+  position:absolute;
+  width:146rpx;
+  height:151rpx;
+  left:15rpx;
+  top:0rpx;
+  background-size:100% auto;
+  z-index:3;
+}
+.coupons_list .coupon_mark .bg image{
+  width:146rpx;
+  height:151rpx;
+}
+
+.coupons_list.receive .money{color:#c2c2c2;}
+.coupons_list.receive .coupon_mark {background:radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 6rpx, #c2c2c2 6rpx);background-size: 14rpx 14rpx;
+background-position: -6rpx 0rpx;background-repeat:repeat-y;}
+.coupons_list.receive .coupon_mark .before{background-color:#c2c2c2;}
+.coupons_list.receive .coupon_mark .buy{color:#c2c2c2;}
+.coupons_list.receive .coupon_mark .bg{display:block;}

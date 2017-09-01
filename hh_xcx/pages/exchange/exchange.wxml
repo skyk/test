@@ -1,0 +1,91 @@
+<view class="head">
+  <text>可口可乐</text>
+  <text>集花6点</text>
+</view>
+
+<view class="container">
+  <view class="item">
+    <view class="item-left">
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/prod.png" mode="widthFix"></image>
+    </view>
+    <view class="item-right">
+      <view class="details">
+        <view class="prod-wrap">
+          <view class="prod-name">20元可可梦巧克力液态奶200ml装/箱优惠券</view>
+          <view class="points">
+            <text>3</text><text>点集花</text>
+          </view>
+        </view>
+        <view class="to-use">去使用</view>
+      </view>
+      <view class="tips">支持永辉超市30家门店</view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="item-left">
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/prod.png" mode="widthFix"></image>
+    </view>
+    <view class="item-right">
+      <view class="details">
+        <view class="prod-wrap">
+          <view class="prod-name">20元可可梦巧克力液态奶200ml装/箱优惠券</view>
+          <view class="points">
+            <text>5</text><text>点集花</text>
+          </view>
+        </view>
+        <view class="to-exchange">立即兑换</view>
+      </view>
+      <view class="tips">支持永辉超市30家门店</view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="item-left">
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/prod.png" mode="widthFix"></image>
+    </view>
+    <view class="item-right">
+      <view class="details">
+        <view class="prod-wrap">
+          <view class="prod-name">20元可可梦巧克力液态奶200ml装/箱优惠券</view>
+          <view class="points">
+            <text>10</text><text>点集花</text>
+          </view>
+        </view>
+        <view class="not-enough">集花不足</view>
+      </view>
+      <view class="tips">支持永辉超市30家门店</view>
+    </view>
+  </view>
+  <view class="item">
+    <view class="item-left">
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/prod.png" mode="widthFix"></image>
+      <image class="no-exc" src="http://h5smg.miyapay.com/h5/hhxcx_img/no-exchange.png" mode="widthFix"></image>
+    </view>
+    <view class="item-right">
+      <view class="details">
+        <view class="prod-wrap">
+          <view class="prod-name">20元可可梦巧克力液态奶200ml装/箱优惠券</view>
+          <view class="points">
+            <text>10</text><text>点集花</text>
+          </view>
+        </view>
+        <view class="no-exchange">已兑完</view>
+      </view>
+      <view class="tips">支持永辉超市30家门店</view>
+    </view>
+  </view>
+  
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<view class="container">
+  <image class="bak" src="../../images/bg_paycode@2x.png" mode="widthFix"></image>
+  <view class="content">
+    <text class="code">130915602783115291</text>
+    <view class="barcode"></view>
+    <view class="portrait">
+      <view class="point"></view>
+      <view class="point"></view>
+      <view class="point"></view>
+      <view class="point"></view>
+      <view class="icon">
+        <image src="http://h5smg.miyapay.com/h5/hhxcx_img/prod.png" mode="widthFix"></image>
+      </view>
+      <view class="point"></view>
+      <view class="point"></view>
+      <view class="point"></view>
+      <view class="point"></view>
+    </view>
+    <view class="tips">请在付款时将条形码出示给收银员</view>
+    <view class="line"></view>
+  </view>
+</view>

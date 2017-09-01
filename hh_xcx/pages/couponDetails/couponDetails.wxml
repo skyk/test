@@ -1,0 +1,40 @@
+<view class="bak {{index}}">
+  <view class="coupon-wrap {{index}}">
+    <view class="top">
+      <view class="logo {{initData.card_statusl?'':'noCard'}}">
+        <image src="{{initData.logo}}" mode="widthFix"></image>
+      </view>
+      <view class="collectionCard" wx:if="{{initData.card_statusl}}">查看集花卡</view>
+      <view class="coupon-name">{{initData.couponname}}</view>
+      <view class="prod-name">{{initData.goodname}}</view>
+      <view class="coupon-value">{{initData.couponfee/100}}元</view>
+      <view class="receive-btn {{index}}">立即领取</view>
+      <view class="tips">{{}}</view>
+      <view class="useful-time">有效期：{{initData.validate_time}}</view>
+    </view>
+    <view class="bottom">
+      <view class="prod-img" hidden="{{!isSingle}}">
+        <image src="{{initData.pic1_path}}" mode="widthFix"></image>
+      </view>
+      <navigator class="item" url="../map/map?id={{initData.market.id}}&positionNS={{initData.market.positionNS}}&positionWE={{initData.market.positionWE}}">
+        <view class="icon">
+          <image src="http://h5smg.miyapay.com/h5/hhxcx_img/ic_shop@2x.png" mode="widthFix"></image>
+        </view>
+        <view class="title">最近门店</view>
+        <view class="content">{{initData.market?initData.market.name:'暂无'}}</view>
+        <image class="ic-right" src="http://h5smg.miyapay.com/h5/hhxcx_img/ic_coupon_arrow@2x.png" mode="widthFix"></image>
+      </navigator>
+      <navigator class="item">
+        <view class="icon">
+          <image src="http://h5smg.miyapay.com/h5/hhxcx_img/ic_rules@2x.png" mode="widthFix"></image>
+        </view>
+        <view class="title">使用须知</view>
+        <view class="content">{{initData.instruction}}</view>
+        <image class="ic-right" src="http://h5smg.miyapay.com/h5/hhxcx_img/ic_coupon_arrow@2x.png" mode="widthFix"></image>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+
+

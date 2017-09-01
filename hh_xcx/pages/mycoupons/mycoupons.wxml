@@ -1,0 +1,67 @@
+<view class="couponsBox">
+  <view class="shengqian">可省钱<text>47</text>元</view>
+  <image src="http://h5smg.miyapay.com/h5/hhxcx_img/img_line.png" mode="widthFix" class="line"></image>
+  
+  <view class="coupons">
+    <view bindtap="bindToCouponDetails" class="item">
+      <image class="bak" src="http://h5smg.miyapay.com/h5/hhxcx_img/img_ticket_box@2x.png" mode="widthFix"></image>
+      <view class="container">
+        <view class="top">
+          <view class="icon">
+            <image src="http://h5smg.miyapay.com/h5/hhxcx_img/prod.png" mode="widthFix"></image>
+          </view>
+          <view class="details">
+            <view class="prod-name">可可梦单品抵用券</view>
+            <view class="prod-coupon">
+              <view>
+                <text>巧克力液态奶200ml/盒30盒/箱</text>
+              </view>
+              
+            </view>
+          </view>
+          <view class="btn" catchtap="getCoupon">
+            <view class="pro-price">￥<text>9</text></view>
+            <view class="useConditions">满<text>300</text>元可用</view>
+            <view class="goUse">去使用</view>
+          </view>
+        </view>
+        <view class="coupon-number">x<text>3</text></view>
+        <view class="bottom">
+          <!-- <view>多买多送</view> -->
+          <view>有效期：2017.04.01-2017.04.30</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="coupons">
+    <view bindtap="bindToCouponDetails" class="item">
+      <image class="bak" src="http://h5smg.miyapay.com/h5/hhxcx_img/img_ticket_box@2x.png" mode="widthFix"></image>
+      <view class="container">
+        <view class="top">
+          <view class="icon">
+            <image src="http://h5smg.miyapay.com/h5/hhxcx_img/prod.png" mode="widthFix"></image>
+          </view>
+          <view class="details">
+            <view class="prod-name">可可梦单品抵用券</view>
+            <view class="prod-coupon">
+              <view>
+                <text>巧克力液态奶200ml/盒30盒/箱</text>
+              </view>
+              
+            </view>
+          </view>
+          <view class="btn" catchtap="getCoupon">
+            <view class="pro-price">￥<text>9</text></view>
+            <view class="useConditions">满<text>300</text>元可用</view>
+            <view class="goUse">去使用</view>
+          </view>
+        </view>
+        <view class="coupon-number">x<text>3</text></view>
+        <view class="bottom">
+          <!-- <view>多买多送</view> -->
+          <view>有效期：2017.04.01-2017.04.30</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

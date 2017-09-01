@@ -1,0 +1,65 @@
+page{background:#f5f5f5;padding-top:60rpx}
+.title{text-align: center;font-size:60rpx;color:#FF694B;line-height:84rpx}
+.tel-box{width:600rpx;height:100rpx;background:#fff;margin:auto;border:1rpx solid #f3f3f4;border-radius:15rpx 15rpx 0 0;margin-top:60rpx}
+.tel-box input{width:100%;height:100rpx;padding-left:30rpx;font-size:28rpx;color:#000}
+.verCode-box{width:600rpx;height:100rpx;background:#fff;margin:auto;border:1rpx solid #f3f3f4;border-top:none;border-radius:0 0 15rpx 15rpx}
+.verCode-box{overflow:hidden}
+.verCode-box input{float:left;width:50%;height:100rpx;font-size:28rpx;padding-left:30rpx;box-sizing:border-box;color:#000}
+.verCode-box .getCode{float:right;width:34%;height:100rpx;font-size:28rpx;color:#BDCADB;text-align:right;padding-right:30rpx;line-height:100rpx}
+.verCode-box .getCode.active{color:#ff694b}
+.verCode-box .wait{float:right;width:50%;height:100rpx;font-size:28rpx;color:#BDCADB;text-align:right;padding-right:30rpx;line-height:100rpx}
+
+.finish-btn{width:600rpx;height:100rpx;font-size:30rpx;text-align:center;line-height:100rpx;border-radius:15rpx;margin:80rpx auto 30rpx;color:#fff}
+.finish-btn.disable{background:#e5e6ea}
+.finish-btn.enable{background:linear-gradient(to right, #ff694b , #ff9b7d);box-shadow:0 0 20rpx #ff9b7d}
+
+.tips{width:470rpx;margin:auto;line-height:42rpx;color:#BDCADB;font-size:28rpx;text-align:center}
+.tips text{text-decoration:underline;margin-left:10rpx}
+
+.service{width:200rpx;height:60rpx;border-radius:30rpx;margin: 284rpx auto 0;line-height:60rpx;color:#FF694B;font-size:30rpx;text-align:center;background:#fff;box-shadow:0 0 20rpx rgba(227,96,91,.1)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

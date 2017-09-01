@@ -1,0 +1,22 @@
+page{background:#f5f5f5;padding-bottom:50rpx}
+.card{width: 718rpx;height: 340rpx;background: url('http://h5smg.miyapay.com/h5/hhxcx_img/card_bak.png');background-size:100%;margin:30rpx auto 0}
+.card .top{width:100%;height:100rpx;overflow:hidden}
+.card .top view{float:left;color:#fff}
+.card .top view:last-child{float:right}
+.card .top .logo image{width:46rpx;height:46rpx;border-radius:50%;margin-left:22rpx;margin-top:26rpx;}
+.card .top .brand-name{font-size:30rpx;margin-left:30rpx;margin-top:35rpx}
+.card .top .card-name{font-size:30rpx;margin-left:15rpx;margin-top:35rpx}
+.card .top .intro{width:84rpx;height:40rpx;border:1rpx solid #fff;border-radius:20rpx;font-size:22rpx;text-align:center;line-height:40rpx;margin-top:30rpx;margin-left:40rpx}
+.card .top .points{margin-right:22rpx;margin-top:26rpx}
+.card .top .points text:first-child{font-size:40rpx;margin-right:5rpx}
+.card .top .points text:last-child{font-size:22rpx}
+.card .bottom{width:100%;overflow:hidden;padding-left:64rpx;padding-top:20rpx}
+.card .bottom .point{float:left;width:70rpx;height:70rpx;border-radius:50%;text-align:center;line-height:70rpx;margin-right:60rpx;margin-bottom:35rpx;border:1rpx dashed #9a9a9a;color:#9a9a9a}
+.card .bottom .point:nth-child(5n){margin-right:0}
+.card .bottom .point.active{color:#FF694B;border:1rpx solid #FF694B;}
+.card .bottom .point.active.add{border:none;background:url('http://h5smg.miyapay.com/h5/hhxcx_img/bg_point@2x.png') center no-repeat;background-size:100%;width:82rpx;margin-left:-12rpx}
+
+.no-card{width:100%;}
+.no-card image{display:block;width:300rpx;height:300rpx;margin:168rpx auto 60rpx;}
+.no-card .tips{text-align:center;font-size:30rpx;line-height:42rpx;color:#6C7B8A}
+.no-card .btn{width:300rpx;height:80rpx;border-radius:40rpx;text-align:center;line-height:80rpx;color:#FF694B;background:#fff;font-size:30rpx;margin:128rpx auto 0;box-shadow:5rpx 0 15rpx rgba(255,105,75,.05),-5rpx 0 15rpx rgba(255,105,75,.05),0 -5rpx 15rpx rgba(255,105,75,.05),0 5rpx 15rpx rgba(255,105,75,.05)}

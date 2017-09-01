@@ -1,0 +1,87 @@
+<view class="card">
+  <view class="top">
+    <view class="logo">
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/ic_logo.png" mode="widthFix"></image>
+    </view>
+    <view class="brand-name">可口可乐</view>
+    <view class="card-name">集花卡</view>
+    <view class="intro">说明</view>
+    <view class="points">
+      <text>6</text>
+      <text>点</text>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="point active">1</view>
+    <view class="point active">2</view>
+    <view class="point active">3</view>
+    <view class="point active">4</view>
+    <view class="point active">5</view>
+    <view class="point active">6</view>
+    <view class="point">7</view>
+    <view class="point">8</view>
+    <view class="point">9</view>
+    <view class="point">10</view>
+  </view>
+</view>
+
+<view class="card">
+  <view class="top">
+    <view class="logo">
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/ic_logo.png" mode="widthFix"></image>
+    </view>
+    <view class="brand-name">伊利</view>
+    <view class="card-name">集花卡</view>
+    <view class="intro">说明</view>
+    <view class="points">
+      <text>21</text>
+      <text>点</text>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="point active add">16</view>
+    <view class="point active">17</view>
+    <view class="point active">18</view>
+    <view class="point active">19</view>
+    <view class="point active">20</view>
+    <view class="point active">21</view>
+    <view class="point">22</view>
+    <view class="point">23</view>
+    <view class="point">24</view>
+    <view class="point">25</view>
+  </view>
+</view>
+
+<view class="card">
+  <view class="top">
+    <view class="logo">
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/ic_logo.png" mode="widthFix"></image>
+    </view>
+    <view class="brand-name">飞利浦</view>
+    <view class="card-name">集花卡</view>
+    <view class="intro">说明</view>
+    <view class="points">
+      <text>3</text>
+      <text>点</text>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="point active">1</view>
+    <view class="point active">2</view>
+    <view class="point active">3</view>
+    <view class="point">4</view>
+    <view class="point">5</view>
+    <view class="point">6</view>
+    <view class="point">7</view>
+    <view class="point">8</view>
+    <view class="point">9</view>
+    <view class="point">10</view>
+  </view>
+</view>
+
+<view class="no-card" hidden>
+  <image src="http://h5smg.miyapay.com/h5/hhxcx_img/bg_image@2x.png" mode="widthFix"></image>
+  <view class="tips">你还没有获得品牌集花卡哦</view>
+  <view class="tips">快去使用优惠券吧~</view>
+  <view class="btn">我的优惠券</view>
+</view>

@@ -1,0 +1,33 @@
+<!--detail.wxml-->
+<import src="../common/loading.wxml" />
+<import src="../common/store.wxml" />
+
+<view class="header">
+    <view class="navigationBarBorder"></view>
+    <view class="search-wrap">
+    <navigator url="../location/location?cityName={{cityName}}&cityCode={{cityCode}}&positionNS={{positionNS}}&positionWE={{positionWE}}">
+    <view class="location">
+        <text>{{cityName?cityName:'定位中'}}</text><image src="../../images/icon_arrow_down.png"></image>
+    </view>
+    </navigator>
+        <navigator url="../search/search?searchtype=store">
+
+        <view class="search-btn">
+            <image src="../../images/search_store.png"></image>
+        </view>
+        </navigator>
+    </view>
+</view>
+<template is="loading" data="{{display: isShow?'none':'block'}}"/>
+<!--<scroll-view class="store-page" scroll-y="true" style="height:{{windowHeight}}px" bindscrolltolower="loadMore">-->
+<view class="store-page">
+    <view class="store_list" style="display:{{isShow?'block':'none'}}">
+        <template is="store" data="{{callBackData}}"/>
+    </view>
+     <button type="default" size="default" 
+            loading="{{loading}}" 
+            class="load_more_btn" 
+            bindtap="onReachBottom"
+            style="display:{{showBnt?'block':'none'}}">{{loading?'正在加载中':'点击或滚动加载更多'}}</button>
+</view>
+<!--</scroll-view>-->

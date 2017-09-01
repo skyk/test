@@ -1,0 +1,9 @@
+<view class="title">切换城市</view>
+<view class="content">请选择您当前所在城市</view>
+<view class="city">
+  <image src="http://h5smg.miyapay.com/h5/hhxcx_img/hangzhou.png" mode="widthFix"></image>
+</view>
+<view class="city">
+  <image src="http://h5smg.miyapay.com/h5/hhxcx_img/hefei.png" mode="widthFix"></image>
+</view>
+<view class="tips">其他城市，敬请期待</view>

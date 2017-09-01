@@ -1,0 +1,47 @@
+<!--pages/mine/mine.wxml-->
+<view class="mineBox">
+  <view class="head_portrait">
+    <view class="head"></view>
+    <view class="userName">Chris Karl</view>
+  </view>
+
+  <view class="options flex-wrp">
+    <view class="jihuaka flex-wrp" style="flex-direction:column">
+      <view class="options_text">集花卡</view>
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/img_line.png" mode="widthFix"></image>
+      <view><text class="counts">3</text>张</view>
+    </view>
+
+    <view class="divider"></view>
+
+    <view class="coupons flex-wrp" style="flex-direction:column" bindtap="toMycoupons">
+      <view class="options_text">优惠券</view>
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/img_line.png" mode="widthFix"></image>
+      <view><text class="counts">50</text>张</view>
+    </view>
+  </view>
+
+  <view class="msgBox flex-wrp" style="flex-direction:column">
+    <view class="preferentialHistory flexing" >
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/history.png" mode="widthFix" class="tubiao fun"></image>
+      <view class="msg_text">优惠历史</view>
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/arrow.png" mode="widthFix" class="tubiao arrow"></image>
+    </view>
+    <view class="someProblem flexing" >
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/problem.png" mode="widthFix" class="tubiao fun"></image>
+      <view class="msg_text">常见问题</view>
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/arrow.png" mode="widthFix" class="tubiao arrow"></image>
+    </view>
+    <view class="settings flexing">
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/settings.png" mode="widthFix" class="tubiao fun"></image>
+      <view class="msg_text">设置</view>
+      <image src="http://h5smg.miyapay.com/h5/hhxcx_img/arrow.png" mode="widthFix" class="tubiao arrow"></image>
+    </view>
+  </view>
+
+  <view class="service flexing" bindtap="makeCall">
+   <image src="http://h5smg.miyapay.com/h5/hhxcx_img/help.png" mode="widthFix" class="tubiao fun"></image>
+   <view class="msg_text">联系客服</view>
+   <image src="http://h5smg.miyapay.com/h5/hhxcx_img/arrow.png" mode="widthFix" class="tubiao arrow"></image>
+  </view>
+</view>

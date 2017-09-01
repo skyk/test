@@ -1,0 +1,22 @@
+<!--map.wxml-->
+<view class="map-page">
+<view class="navigationBarBorder"></view>
+    <map
+        style="width: 100%; height: 80%;"
+        scale="16"
+        latitude="{{latitude}}"
+        longitude="{{longitude}}"
+        markers="{{markers}}"
+        >
+      </map>
+    <view class="footer">
+
+        <view class="word">
+            <text class="name">{{marketName}}</text>
+            <text class="address">{{address}}</text>
+        </view>
+        <view class="icon">
+            <image src="../../images/map.png"></image>
+        </view>
+    </view>
+</view>

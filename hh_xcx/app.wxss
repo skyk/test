@@ -1,0 +1,4 @@
+/**app.wxss**/
+view{box-sizing: border-box}
+
+.toast{width:460rpx;height:80rpx;position: fixed;background:#323c46;color:#fff;font-size:30rpx;text-align:center;line-height:80rpx;left:145rpx;top:500rpx;border-radius:40rpx;z-index:9999}

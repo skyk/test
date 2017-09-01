@@ -1,0 +1,24 @@
+<!--pages/changePhoneNum/changePhoneNum.wxml-->
+<view class="changeBox">
+  <!-- <view class="shengqian">可省钱<text>47</text>元</view> -->
+  <text class="nowNum">当前手机号码</text>
+  <text class="phoneNum">158****0536</text>
+  <image src="http://h5smg.miyapay.com/h5/hhxcx_img/img_line.png" mode="widthFix" class="line"></image>
+
+  <view class="numBox">
+    <view class="verCode-box">
+      <input type="number" placeholder="验证码" placeholder-style="color:#BDCADB" bindinput="getVerCode" />
+      <view class="getCode {{isGetVerCode?'':'active'}}" bindtap="{{isGetVerCode?'':'bindGetVerCode'}}">{{text}}</view>
+    </view>
+
+    <view class="tel-box"><input type="number" placeholder="新手机号码" placeholder-style="color:#BDCADB" bindinput="getTel" /></view>
+
+    <view class="verCode-box">
+      <input type="number" placeholder="验证码" placeholder-style="color:#BDCADB" bindinput="getVerCode" />
+      <view class="getCode {{isGetVerCode?'':'active'}}" bindtap="{{isGetVerCode?'':'bindGetVerCode'}}">{{text}}</view>
+    </view>
+  </view>
+  
+  <view class="finish-btn {{isEnable?'enable':'disable'}}" bindtap="{{isEnable?'bindLogin':''}}">完成</view>
+  <view class="service" bindtap="bindMakeCall">联系客服</view>
+</view>

@@ -1,0 +1,103 @@
+<!--detail.wxml-->
+<import src="../common/loading.wxml" />
+<import src="../common/coupons.wxml" />
+
+<view class="navigationBarBorder"></view>
+<template is="loading" data="{{display: isShow?'none':'block'}}"/>
+<view class="storeDetails-page" style="display:{{isShow?'block':'none'}}">
+    <view class="store_list">
+        <view class="store_area">
+            <view class="pic">
+                <image src="{{callbackData.market_pic?callbackData.market_pic:'../../images/details_banner.png'}}"></image>
+            </view>
+            <view class="info_area">
+                <view class="word">
+                    <view class="name"><text>{{callbackData.name}}</text></view>
+                    <navigator url="../map/map?positionwe={{callbackData.positionwe}}&positionns={{callbackData.positionns}}&name={{callbackData.name}}&address={{callbackData.address}}">
+                        <view class="address">
+                            <image src="../../images/icon_position_detail.png"></image>{{callbackData.distance}}m
+                        </view> 
+                    </navigator>
+                </view>
+                <view class="loc"><text>{{callbackData.address}}</text></view>
+            </view>
+        </view>
+    </view>
+    
+    <!--门店信息-->
+    <view class="store_info">
+        <view class="title"><text>门店信息</text></view>
+        <view class="inf"><view>电话：<view bindtap="makePhoneCall" data-phonenum="{{callbackData.phone}}">{{callbackData.phone}}</view></view></view>
+        <view class="inf"><text>营业时间：08:00-22:00</text></view>
+    </view>
+
+   
+   <!--领券区-->
+   <view class="coupons_area">
+
+   <view wx:for="{{callbackData.coupons}}">
+      <template is="coupons" data="{{...item,couponType}}"/>
+    </view>
+      <!--end of coupons_list-->
+
+      <!--<view class="coupons_list">
+          <view class="money">
+            <text class="mark">￥</text>
+            <text class="number">5</text>
+          </view>
+          <view class="info">
+             <view class="title"><text class="name">可口可乐单品抵用券</text><text class="nb">x4</text></view>
+             <view class="word">
+              <text>美汁源纯粹系列350ml</text>
+             </view>
+             <view class="date">
+              <text>有效期至2017.02.30</text>              
+             </view>
+          </view>
+          <view class="coupon_mark">
+              <view class="before"></view>
+              <view class="circle-1"></view>
+              <view class="circle-2"></view>
+              <view class="buy">
+                <text>领券</text>
+              </view>
+              <view class="bg"><image src="../../images/pic_seal.png"></image></view>
+          </view>
+      </view>-->
+      <!--end of coupons_list-->
+      <!--<view class="coupons_list receive">
+          <view class="money">
+            <text class="mark">￥</text>
+            <text class="number small">50</text>
+          </view>
+          <view class="info">
+             <view class="title"><text class="name">可口可乐单品抵用券</text><text class="nb">x4</text></view>
+             <view class="word">
+              <text>美汁源纯粹系列350ml</text>
+             </view>
+             <view class="date">
+              <text>有效期至2017.02.30</text>              
+             </view>
+          </view>
+          <view class="coupon_mark">
+              <view class="before"></view>
+              <view class="circle-1"></view>
+              <view class="circle-2"></view>
+              <view class="buy">
+                <text>领券</text>
+              </view>
+              <view class="bg"><image src="../../images/pic_seal.png"></image></view>
+          </view>
+      </view>-->
+      <!--end of coupons_list-->
+  </view>
+
+<view class="mask"  style="display:{{mask?'block':'none'}}" bindtap="closeMask" ></view>
+<view class="tip_box"  style="display:{{mask?'block':'none'}}" bindtap="showCoupon" >
+  <view class="icon" ><icon type="{{msg=='恭喜您！领券成功'?'success':'warn'}}" size="35" color="green" /></view>
+  <view class="sucess"><text>{{msg}}</text></view>
+  <view class="goto_page" bindtap="goTo" style="display:{{msg=='恭喜您！领券成功'?'block':'none'}}"><text >查看我的券包使用券</text></view>
+
+</view>
+
+</view>

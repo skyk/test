@@ -1,0 +1,158 @@
+<import src="../common/toast.wxml" />
+<view class="fixed-section">
+  <navigator class="location" url="../city/city">
+    <text>{{cityName?cityName:'定位中...'}}</text>
+    <image src="../../images/ic_arrow@2x.png" mode="widthFix"></image>
+  </navigator>
+
+  <navigator class="barcode" url="../toUseCoupons/toUseCoupons" hidden="{{!iconIsShow}}">
+    <image src="../../images/ic_code_max@2x.png" mode="widthFix"></image>
+  </navigator>
+
+  <navigator class="collection" url="../collectionCard/collectionCard" hidden="{{!iconIsShow}}">
+    <image src="../../images/ic_card@2x.png" mode="widthFix"></image>
+  </navigator>
+</view>
+
+<!-- <scroll-view style="height:100%" scroll-y="true" upper-threshold="100" bindscrolltoupper="bindShowIcon" lower-threshold="350" bindscrolltolower="bindHiddenIcon">
+<scroll-view style="height:100%" scroll-y="true" upper-threshold="250" bindscrolltoupper="bindShowMenu" lower-threshold="150" bindscrolltolower="bindHiddenMenu">  -->
+<view class="top-section">
+  <navigator class="l-collection" url="../collectionCard/collectionCard">
+    <image src="../../images/ic_card@2x.png" mode="widthFix"></image>
+    <text>集花卡</text>
+  </navigator>
+  <navigator class="l-barcode" url="../toUseCoupons/toUseCoupons">
+    <image src="../../images/ic_code_max@2x.png" mode="widthFix"></image>
+    <text>去用券</text>
+  </navigator>
+</view>
+
+<swiper indicator-dots="true" indicator-active-color="#ff694b" indicator-color="#fff" autoplay="true" interval="3000" duration="1000" circular="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" mode="widthFix"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- <view class="menu-box fixed" hidden="{{!menuIsShow}}">
+   <scroll-view class="menu" scroll-x="true">
+    <view class="slide-wrap">
+      <view>
+        <text data-id="1" class="{{id==1?'active':''}}" bindtap="getCur">全部</text>
+      </view>
+      <view wx:for="{{menuArray}}">
+        <text data-id="{{item.id}}" class="{{id==item.id?'active':''}}" bindtap="getCur">{{item.name}}</text>
+      </view>
+    </view>
+  </scroll-view> 
+</view> -->
+
+<view class="menu-box {{menuIsShow?'fixed':''}}">
+   <scroll-view class="menu" scroll-x="true">
+    <view class="slide-wrap">
+      <view>
+        <text data-id="1" class="{{id==1?'active':''}}" bindtap="getCur">全部</text>
+      </view>
+      <view wx:for="{{menuArray}}">
+        <text data-id="{{item.id}}" class="{{id==item.id?'active':''}}" bindtap="getCur">{{item.categoryname}}</text>
+      </view>
+    </view>
+  </scroll-view> 
+</view>
+
+
+<view class="coupons {{menuIsShow?'fixed':''}}">
+
+  <!-- <view bindtap="bindToCouponDetails" class="item">
+    <image class="bak" src="../../images/img_ticket_box@2x.png" mode="widthFix"></image>
+    <view class="container">
+      <view class="top">
+        <view class="icon">
+          <image src="../../images/prod.png" mode="widthFix"></image>
+        </view>
+        <view class="details">
+          <view class="prod-name">可可梦巧克力液态奶200ml装/箱</view>
+          <view class="prod-coupon">
+            <view>
+              <text>20</text><text>元优惠券</text>
+            </view>
+            <view>满300元可用</view>
+          </view>
+        </view>
+        <view class="btn" catchtap="getCoupon">
+          <image src="../../images/btn_get.png" mode="widthFix"></image>
+        </view>
+      </view>
+      <view class="bottom">
+        <view>多买多送</view>
+        <view>支持永辉超市30家门店</view>
+      </view>
+    </view>
+  </view> -->
+  
+  <block wx:for="{{callBackData}}">
+    <view class="item" bindtap="bindToCouponDetails" data-pubid="{{item.pubid}}" data-type="{{item.type}}" data-flag="{{item.flag}}">
+      <image class="bak" src="../../images/img_ticket_box@2x.png" mode="widthFix"></image>
+      <view class="container">
+        <view class="top">
+          <view class="icon">
+            <image src="{{item.pic1_path}}" mode="widthFix"></image>
+          </view>
+          <view class="details">
+            <view class="prod-name">{{item.couponname}}</view>
+            <view class="prod-coupon">
+              <view>
+                <text>{{item.couponfee/100}}</text><text>元优惠券</text>
+              </view>
+              <view>满{{item.useamount/100}}元可用</view>
+            </view>
+          </view>
+          <view class="btn">
+            <image src="../../images/btn_get.png" mode="widthFix" wx:if="{{item.flag==0}}" catchtap="getCoupon" data-pid="{{item.pubid}}"></image>
+            <image src="../../images/btn_use.png" mode="widthFix" wx:elif="{{item.flag==1}}" catchtap="useCoupon" data-pid="{{item.pubid}}"></image>
+            <view class="text" wx:elif="{{item.flag==2}}">已使用</view>
+            <view class="text" wx:elif="{{item.flag==3}}">已过期</view>
+            <view class="text" wx:elif="{{item.flag==4}}">已领完</view>
+          </view>
+        </view>
+        <view class="bottom">
+          <view class="more" wx:if="{{item.card_status}}">多买多送</view>
+          <view class="new" wx:elif="{{item.isnewcoupon}}">新人专享</view>
+          <view class="none" wx:else><image src="http://h5smg.miyapay.com/h5/hhxcx_img/image@3x.png" mode="widthFix"></image></view>
+          <view class="tip" style="{{item.memoColor?'color:'+item.memoColor:''}}">{{item.memo?item.memo:''}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="no-coupons" wx:if="{{isNoCoupons}}">
+  <image src="../../images/bg_no_coupons@2x.png" mode="widthFix"></image>
+  <view class="tips">
+    <text>暂无可领的券</text>
+    <text>敬请期待...</text>
+  </view>
+</view>
+
+<view class="no-more" wx:if="{{isNoMore}}">
+  没有更多了...
+</view>
+<!-- </scroll-view> 
+</scroll-view> -->
+
+<template is="toast" data="{{msg,isToastShow}}"></template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

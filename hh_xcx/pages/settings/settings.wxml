@@ -1,0 +1,12 @@
+<!--pages/settings/settings.wxml-->
+<view class="setBox">
+  <view class="changePhone">
+    <text>修改手机号码</text>
+    <image src="http://h5smg.miyapay.com/h5/hhxcx_img/arrow.png" mode="widthFix"></image>
+  </view>
+  <view class="aboutHuiHua">
+    <text>关于会花</text>
+    <image src="http://h5smg.miyapay.com/h5/hhxcx_img/arrow.png" mode="widthFix"></image>
+  </view>
+  <view class="exitLogin">退出登录</view>
+</view>

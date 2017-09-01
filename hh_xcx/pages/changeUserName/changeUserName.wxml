@@ -1,0 +1,3 @@
+<!--pages/changeUserName/changeUserName.wxml-->
+<input class="userName"value="ChirsKarl" />
+<view class="finish-btn">完成</view>

@@ -1,0 +1,57 @@
+page{width:100%;height:100%}
+.bak{width:100%;min-height:100%;padding:20rpx 0 74rpx}
+.bak.individual{background: #47b7fc;}
+.bak.universal{background: #fe6667;}
+.bak.no-residue{background: #323c46;}
+.bak.exchange{background: #fc4c90;}
+.coupon-wrap{margin:auto;overflow:hidden}
+.coupon-wrap.individual{width:678rpx;height:1298rpx;background:url('http://h5smg.miyapay.com/h5/hhxcx_img/bg_cash_detailpage@2x.png') no-repeat center;background-size:100%;}
+.coupon-wrap.universal{width:678rpx;height:918rpx;background:url('http://h5smg.miyapay.com/h5/hhxcx_img/bg_cash_detailpage2@2x.png') no-repeat center;background-size:100%;}
+.coupon-wrap .top{width:100%;height:674rpx;overflow:hidden;text-align:center}
+.coupon-wrap .top .logo{width:100rpx;height:100rpx;margin:20rpx auto;box-shadow:0 10rpx 30rpx rgba(0,0,0,.2);border-radius:15rpx}
+.coupon-wrap .top .logo.noCard{margin:53rpx auto;}
+.coupon-wrap .top .logo image{width:100rpx;border-radius:15rpx}
+.coupon-wrap .top .collectionCard{width:180rpx;height:44rpx;line-height:44rpx;border:1rpx solid #FF694B;color:#FF694B;border-radius:22rpx;margin:auto;font-size:24rpx}
+.coupon-wrap .top .coupon-name{font-size:30rpx;color:#000;font-weight:bold;margin:22rpx auto 20rpx}
+.coupon-wrap .top .prod-name{font-size:24rpx;color:#000}
+.coupon-wrap .top .coupon-value{font-size:60rpx;color:#FF694B;margin:20rpx auto}
+.coupon-wrap .top .receive-btn{width:530rpx;height:80rpx;line-height:80rpx;font-size:30rpx;color:#fff;margin:auto;border-radius:15rpx;}
+.coupon-wrap .top .receive-btn.individual{background:#46a5fc;box-shadow:0 5rpx 30rpx #46a5fc}
+.coupon-wrap .top .receive-btn.universal{background:#fe0002;box-shadow:0 5rpx 30rpx #fe0002}
+.coupon-wrap .top .receive-btn.no-residue{background:#e5e6ea;box-shadow:0 5rpx 30rpx #e5e6ea}
+.coupon-wrap .top .receive-btn.exchange{background:#fb50b7;box-shadow:0 5rpx 30rpx #fb50b7}
+.coupon-wrap .top .tips{font-size:24rpx;color:#000;margin:40rpx auto 20rpx}
+.coupon-wrap .top .useful-time{font-size:24rpx;color:#6C7B8A;margin-top:70rpx}
+
+.coupon-wrap .bottom{width:100%;height:620rpx;overflow:hidden;padding:40rpx 36rpx 0}
+.coupon-wrap .bottom .prod-img{width:320rpx;height:320rpx;margin:10rpx auto 50rpx}
+.coupon-wrap .bottom .prod-img image{width:320rpx}
+.coupon-wrap .bottom .item{width:100%;overflow:hidden;position:relative;padding-right:40rpx;line-height:100rpx;box-sizing:border-box}
+.coupon-wrap .bottom .item:nth-child(2){border-bottom:1rpx solid #E7E8E9}
+.coupon-wrap .bottom .item .icon{float:left;padding-top:8rpx;margin-right:25rpx;width:44rpx;height:100rpx}
+.coupon-wrap .bottom .item .icon image{width:44rpx}
+.coupon-wrap .bottom .item .title{float:left;font-size:30rpx;color:#000}
+.coupon-wrap .bottom .item .content{float:right;font-size:30rpx;color:#6C7B8A}
+.coupon-wrap .bottom .item .ic-right{position:absolute;right:0;top:36rpx;width:15rpx}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
